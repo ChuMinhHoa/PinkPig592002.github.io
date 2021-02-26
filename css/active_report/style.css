@@ -16,6 +16,9 @@ p {
 
 body {
     background-color: #1DDDB4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -51,8 +54,41 @@ a:hover {
     font-size: 25px;
 }
 
-.link:first-child {
+.header .link:first-child {
     padding-left: 0px;
+}
+
+.rp-categories-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-tp {
+    margin-left: 30px;
+}
+
+.categories {
+    display: flex;
+}
+
+.rp-categories-wrapper .link {
+    margin: 0px 5px;
+}
+
+.rp-categories-wrapper .active-link {
+    border-bottom: 2px solid black;
+} 
+
+.rp-categories-wrapper .active-link a {
+    color: black;
+}
+
+.rp-categories-wrapper .link:hover {
+    border-bottom: 2px solid black;
+}
+
+.rp-categories-wrapper .link:hover a{
+    color: black;
 }
 
 .acc {
@@ -100,6 +136,7 @@ a:hover {
 
 .container {
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .rp-show-wrapper {
@@ -235,9 +272,8 @@ a:hover {
 
 .footer {
     width: 100%;
-    position: relative; 
     bottom: 0px;
-    margin-top: 80px;
+    margin-top: auto;
 }
 
 .footer-container {
@@ -273,6 +309,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 1140px) {
+    .rp-categories-wrapper {
+        display: block;
+    }
+
     .half-triagle {
         border-top-width: 60px;
     }
@@ -308,6 +348,19 @@ a:hover {
     }
     .half-triagle {
         border-top-width: 30px;
+    }
+    .wrapper {
+        display: block;
+    }
+
+    .rp-img {
+        text-align: center;
+    }
+    .rp-discrible-wrapper {
+        padding-left: 0px;
+    }
+    .wrapper .title {
+        text-align: center;
     }
 }
 
