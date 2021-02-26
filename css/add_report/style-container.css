@@ -37,6 +37,7 @@ p{
 }
 .input-title-wrapper input{
     width: 80%;
+    font-size: 18px;
 }
 
 
@@ -53,8 +54,8 @@ p{
 .button-hide,.form-upload label{
     background-color: #1DDDB4;
     display: inline-block;
-    margin: 20px;
-    margin-left: 55px;
+    margin: 5%;
+    margin-top: 10px;
     margin-bottom: 0px;
     border-radius: 15px;
 }
@@ -140,7 +141,6 @@ span svg {
     border: none;
     border-radius: 15px;
     background-color: #E0DDDD;
-    font-size: 18px;
     padding: 5px 25px;
     outline: none;
 }
@@ -230,6 +230,7 @@ span svg {
 }
 
 .submit-button-div{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -246,6 +247,7 @@ span svg {
 }
 
 .cancel-button input {
+    margin-top: 10px;
     padding: 8px 10px;
     color: white;
     display: inline-block;
@@ -283,6 +285,9 @@ span svg {
     justify-content: center;
 }
 @media only screen and (max-width:	1140px){
+    .button-hide,.form-upload,.submit-button-div,.input-title-wrapper input,.cancel-button{
+        font-size: 15px;
+    }
     .triagle{
         border-top-width: 60px;
         border-bottom-width: 60px;
@@ -325,5 +330,11 @@ span svg {
     .triagle {
         border-top-width: 30px;
         border-bottom-width: 30px;
+    }
+    .file-submission-text h3 {
+        font-size: 12px;
+    }
+    .button-hide,.input-title-wrapper,.form-upload,.submit-button-div,.cancel-button{
+        font-size: 10px;
     }
 }
