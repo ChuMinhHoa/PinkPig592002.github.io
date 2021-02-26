@@ -1,27 +1,122 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
 }
-body{
-    background-color: #01011f;
-}
-h3, h5{
+
+h3, h4, h5, p {
     margin: 0px;
 }
-.row{
-    margin: 0px;
+
+p {
+    font-weight: normal;
 }
-.header-wrap{
-    background-color: white;
+
+body {
+    background-color: #1DDDB4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.header,.header-color,.header-bar-div,.content-header{
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #495057;
+}
+
+.top-header a:hover {
+    text-decoration: none;
+    color: #1DDDB4;
+}
+
+
+.top-header {
+    background-color: #010116;
+    display: flex;
+    height: 80px;
+    box-shadow: 0px 4px 10px 0px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
     width: 100%;
+    padding: 0px 30px;
 }
-a,a:hover{
-    text-decoration: none; 
-    color: #FFFFFF;
+
+.link-header {
+    padding: 0 20px;
 }
+
+.link-header a {
+    font-size: 25px;
+}
+
+.header .link:first-child {
+    padding-left: 0px;
+}
+
+.acc {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.img-acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-acc img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.img-acc svg {
+    position: absolute;
+    bottom: 7px;
+    color: white;
+}
+
+.img-acc:hover svg {
+    animation: img 1s infinite;
+}
+
+@keyframes img {
+    0% {
+        bottom: 7px;
+    }
+    50% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* display:flex */
 .submit-wrapper,.header-bar, .header-bar-button, .img-acc, .account{
@@ -30,10 +125,6 @@ a,a:hover{
     align-items: center;
 }
 
-
-.header-bar-div{
-    height: 80px;
-}
 .header, .header-color{
     border-radius: 100% / 50%;
     border-top-left-radius: 0;
@@ -43,10 +134,9 @@ a,a:hover{
 .header{
     background-color: #01011fab;
     position: absolute;
-    height: 600px;
     left: 0px;
     top: 0px;
-    
+    width: 100%;
 }
 .header-color{
     background-image: url("https://www.click2houston.com/resizer/iDwVVd3hXTT53KUwAYxv2cOSuqo=/1600x1143/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/TGIVLLC3MBCLNBPNGQOWZB4UGQ.jpg");
@@ -56,60 +146,7 @@ a,a:hover{
     height: 600px;
     content: "";
 }
-.header-bar{
-    height: 100%;
-    text-align: center;
-}
-.header-bar-button:last-child{
-    padding-right:0px;
-    
-}
-.header-bar-button:first-child{
-    padding-left: 0px;
-}
-.header-bar-button{
-    
-    padding: 0px 20px;
 
-   
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 28px;
-    cursor: pointer;
-
-}
-
-.img-acc img{
-    height: 40px;
-    border-radius: 50%;
-}
-.img-acc svg{
-    position: absolute;
-    bottom: 7px;
-    color: white ;
-}
-.img-acc{
-    cursor: pointer;
-}
-.img-acc:hover svg{
-    animation: img 1s infinite;
-}
-
-svg{
-    color: white;
-}
-@keyframes img{
-    0%{
-        bottom: 7px;
-    }
-    50%{
-        bottom: 5px;
-    }
-    100%{
-        bottom: 3px;
-    }
-}
 .content-header{
     padding-left: 50px;
 }
