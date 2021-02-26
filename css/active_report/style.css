@@ -61,34 +61,24 @@ a:hover {
 .rp-categories-wrapper {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .title-tp {
-    margin-left: 30px;
+    padding-left: 30px;
+}
+
+.tab-category {
+    border: none;
+    width: auto;
+}
+
+.tab-category li, .tab-category a {
+    height: 100%;
 }
 
 .categories {
     display: flex;
-}
-
-.rp-categories-wrapper .link {
-    margin: 0px 5px;
-}
-
-.rp-categories-wrapper .active-link {
-    border-bottom: 2px solid black;
-} 
-
-.rp-categories-wrapper .active-link a {
-    color: black;
-}
-
-.rp-categories-wrapper .link:hover {
-    border-bottom: 2px solid black;
-}
-
-.rp-categories-wrapper .link:hover a{
-    color: black;
 }
 
 .acc {
