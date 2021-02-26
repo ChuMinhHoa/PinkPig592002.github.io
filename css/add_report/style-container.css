@@ -2,6 +2,7 @@ p{
     margin: 0px;
 }
 .triagle {
+    background-color: white;
     border: solid transparent;
     content: "";
     height: 0px;
@@ -9,13 +10,13 @@ p{
     border-top-width: 80px;
     border-right-width: 0px;
     border-bottom-width: 80px;
-    border-left-width: 98.9vw;
+    border-left-width: 100vw;
     border-left-color: #1DDDB4;
 }
 
 .submit-file-wrapper {
-    margin: 30px 0px;
-    padding: 0 50px;
+    background-color: white;
+    padding: 30px 50px;
 }
 
 .file-submission-text {

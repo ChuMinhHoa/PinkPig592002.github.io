@@ -12,6 +12,9 @@ h3, h5{
 .row{
     margin: 0px;
 }
+.header-wrap{
+    background-color: white;
+}
 .header,.header-color,.header-bar-div,.content-header{
     width: 100%;
 }
