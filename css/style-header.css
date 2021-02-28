@@ -105,8 +105,11 @@ a:hover {
         bottom: 3px;
     }
 }
-
 /* display:flex */
+.header-wrap {
+    position: relative;
+}
+
 .submit-wrapper,.header-bar, .header-bar-button, .img-acc, .account{
     display: flex;
     justify-content: center;
@@ -125,6 +128,7 @@ a:hover {
     left: 0px;
     top: 0px;
     width: 100%;
+    height: 100%;
 }
 .header-color{
     background-image: url("https://www.click2houston.com/resizer/iDwVVd3hXTT53KUwAYxv2cOSuqo=/1600x1143/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/TGIVLLC3MBCLNBPNGQOWZB4UGQ.jpg");
@@ -169,7 +173,7 @@ a:hover {
 
 .deadline-div{
     display: flex;
-    margin-top: 150px;
+    margin-top: 250px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -220,7 +224,7 @@ a:hover {
         height: 500px;
     }
     .deadline-div{
-        margin-top: 100px;
+        margin-top: 180px;
     }
     .first-content h1{
         font-size: 60px;
@@ -252,7 +256,7 @@ a:hover {
         height: 400px;
     }
     .deadline-div{
-        margin-top: 40px;
+        margin-top: 120px;
     }
     .first-content h1{
         font-size: 40px;
@@ -282,7 +286,7 @@ a:hover {
         line-height: 16px;
     }
     .deadline-div{
-        margin-top: 50px;
+        margin-top: 120px;
     }
     .submit-button{
         padding: 6px 8px;
@@ -306,7 +310,7 @@ a:hover {
         line-height: 11px;
     }
     .deadline-div{
-        margin-top: 30px;
+        margin-top: 100px;
     }
     .submit-button{
         padding: 6px 8px;
