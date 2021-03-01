@@ -71,6 +71,7 @@
 .rp-button {
     padding: 20px 0px;
     display: flex;
+    position: relative;
 }
 
 .button {
@@ -96,12 +97,40 @@
     background-color: #038f70;
 }
 
+.special {
+    position: relative;
+}
+
 .special a {
     background-color: #dd531d;
 }
 
 .special a:hover {
     background-color: #8f2b03;
+}
+
+.grade {
+    position: absolute;
+    left: 100%;
+    display: none;
+}
+
+#disable {
+    top: 0px;
+    transform: translate(10px, -75%);
+}
+
+#active {
+    bottom: 0px;
+    transform: translate(10px, 75%);
+}
+
+.grade a{
+    background-color: #dadd1d;
+}
+
+.grade a:hover {
+    background-color: #8f8603;
 }
 
 .input-cmt-wrapper {

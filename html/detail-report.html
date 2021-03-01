@@ -70,8 +70,15 @@
                             <a href="">Download</a>
                         </div>
                         <div class="button special">
-                            <a href="">Make Grade</a>
+                            <a href="" id="make-a-grade">Make Grade</a>
+                            <div class="grade" id='disable'>
+                                <a href="">Disable</a>
+                            </div>
+                            <div class="grade" id='active'>
+                                <a href="">Active</a>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -79,7 +86,8 @@
             <form action="" id="cmt">
                 <div class="input-cmt-wrapper">
                     <label class="input-sizer stacked">
-                        <textarea oninput="this.parentNode.dataset.value = this.value" rows="1" placeholder="Type a Comment..." name='cmtTextArea' form="cmt"></textarea>
+                        <textarea oninput="this.parentNode.dataset.value = this.value" rows="1"
+                            placeholder="Type a Comment..." name='cmtTextArea' form="cmt"></textarea>
                     </label>
                     <div class="button-tele">
                         <button type="submit"><i class="fas fa-share telegram"></i></button>
@@ -118,9 +126,8 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
