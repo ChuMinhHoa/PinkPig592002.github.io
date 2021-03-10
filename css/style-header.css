@@ -30,17 +30,41 @@ a:hover {
     color: #495057;
 }
 
-.top-header a:hover {
+.nav-header a:hover {
     text-decoration: none;
     color: #1DDDB4;
 }
 
+.container-area {
+    display: flex;
+}
+
+.side-bar {
+    position: fixed;
+    width: 200px;
+    background-color: #212529;
+    z-index: 100;
+    top: 80px;
+    left: 0px;
+    min-height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
 
 .top-header {
-    background-color: #010116;
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
     display: flex;
     height: 80px;
     box-shadow: 0px 4px 10px 0px;
+    z-index: 200;
+    width: 100%;
 }
 
 .nav-header {
@@ -48,15 +72,23 @@ a:hover {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 0px 30px;
 }
 
 .link-header {
     padding: 0 20px;
+    text-align: center;
+}
+
+.link-header:first-child {
+    width: 200px;
 }
 
 .link-header a {
     font-size: 25px;
+}
+
+.link-header.hamburger a {
+    font-size: 45px;
 }
 
 .header .link:first-child {
@@ -94,6 +126,53 @@ a:hover {
     animation: img 1s infinite;
 }
 
+.side-bar a {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.side-bar .link-header.active a {
+    color: aliceblue;
+}
+
+.side-bar .link-header {
+    display: none;
+    align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+
+.title-bar {
+    padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.25)
+}
+
+.cate-bar {
+    padding: 0rem 0.25rem 0.25rem 1rem;
+}
+
+.cate-bar-title {
+    display: flex;
+    align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cate-bar-title span {
+    position: absolute;
+    right: 0;
+}
+
+.cate-bar-title i {
+    margin-right: 10px;
+}
+
 @keyframes img {
     0% {
         bottom: 7px;
@@ -105,8 +184,3 @@ a:hover {
         bottom: 3px;
     }
 }
-
-
-    
-
-

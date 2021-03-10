@@ -12,18 +12,19 @@ body {
     align-items: center;
 }
 
-.header, .header-color {
+.header-area, .header-color {
     border-radius: 100% / 50%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
-.header {
-    background-color: #01011fab;
-    position: absolute;
+.header-area {
+    background:linear-gradient(rgba(1,1,31,0.67), rgba(1,1,31,0.67)), url("https://www.click2houston.com/resizer/iDwVVd3hXTT53KUwAYxv2cOSuqo=/1600x1143/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/TGIVLLC3MBCLNBPNGQOWZB4UGQ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     left: 0px;
     top: 0px;
-    width: 100%;
     height: 100%;
 }
 
@@ -109,17 +110,14 @@ body {
 }
 
 .hide {
-    width: 100%;
     text-align: center;
     background-color: rgba(129, 129, 129, 0.301);
 }
 
 .text-addrp {
-    width: 100%;
 }
 
 .input-title {
-    width: 100%;
 }
 
 .select-rp-button {

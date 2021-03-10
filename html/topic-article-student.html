@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="../library/fontawesome-free-5.15.2-web/css/solid.css">
     <link rel="stylesheet" href="/css/style-header.css">
     <link rel="stylesheet" href="/css/style-footer.css">
-    <link rel="stylesheet" href="/css/detail-report/style-container.css">
+    <link rel="stylesheet" href="/css/topic-article-student/style-container.css">
 </head>
 
 <body>
     <div class="top-header">
         <div class="nav-header">
             <div class="link-header">
-                <a href="">HOME</a>
+                <a href=""></a>
             </div>
-            <div class="link-header hamburger">
-                <a href="">&equiv;</a>
+            <div class="link-header">
+                <a href=""><div>&equiv;</div></a>
             </div>
         </div>
         <div class="acc">
@@ -40,100 +40,47 @@
             </div>
         </div>
     </div>
-    <div class="side-bar">
-        <div class="title-bar">Account</div>
-        <div class="cate-bar">
-            <div class="cate-bar-title"><i class="fas fa-user"></i>Authentication  <span><i class="fas fa-angle-right"></i></span></div>
-            <div class="link-header">
-                <a href="">Login</a>
+    <div class="title-tp-show-wrapper">
+        <img src="/Img/1980_2.png" alt="">
+        <div class="text-title-tp-show-wrapper">
+            <div class="text-title">
+                <h1>Topic</h1>
             </div>
-            <div class="link-header">
-                <a href="">User</a>
-            </div>
-            <div class="link-header">
-                <a href="">Logout</a>
-            </div>
-        </div>
-        <div class="title-bar">Management</div>
-        <div class="cate-bar">
-            <div class="cate-bar-title"> <i class="fas fa-users"></i> User <span><i class="fas fa-angle-right"></i></span></div>
-            <div class="link-header">
-                <a href="">Coordinator</a>
-            </div>
-            <div class="link-header">
-                <a href="">Manager</a>
-            </div>
-            <div class="link-header">
-                <a href="">Student</a>
-            </div>
-        </div>
-        <div class="cate-bar">
-            <div class="cate-bar-title"><i class="fas fa-book-open"></i> Contributions <span><i class="fas fa-angle-right"></i></span></div>
-            <div class="link-header">
-                <a href="">Faculty</a>
-            </div>
-            <div class="link-header">
-                <a href="">Topic</a>
-            </div>
-            <div class="link-header">
-                <a href="">Article</a>
+            <div class="description-title">
+                <h2>See all topics where you need to upload articles below.</h2>
+                <h2>Hope you can finish them before the deadline.</h2>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="rp-show-wrapper">
-            <div class="wrapper">
-                <div class="rp-img">
-                    <img src="/Img/class.jpg" alt="">
-                </div>
-                <div class="rp-discrible-wrapper">
-                    <div class="title">
-                        <h1>NAME 1</h1>
-                        <hr>
-                    </div>
-                    <div class="discrible">
-                        <div class="author">
-                            <h3>Author:</h3>
-                            <p>hongbtgch18105@gmail.com</p>
-                        </div>
-                        <div class="status">
-                            <h3>Status:</h3>
-                            <h4 id="status">Not Grade</h4>
-                        </div>
-                    </div>
-                    <div class="rp-button">
-                        <div class="button">
-                            <a href="">View</a>
-                        </div>
-                        <div class="button">
-                            <a href="">Download</a>
-                        </div>
-                        <div class="button special">
-                            <a href="" id="make-a-grade">Make Grade</a>
-                            <div class="grade" id='disable'>
-                                <a href="">Disable</a>
-                            </div>
-                            <div class="grade" id='active'>
-                                <a href="">Active</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <form action="" id="cmt">
-                <div class="input-cmt-wrapper">
-                    <label class="input-sizer stacked">
-                        <textarea oninput="this.parentNode.dataset.value = this.value" rows="1"
-                            placeholder="Type a Comment..." name='cmtTextArea' form="cmt"></textarea>
-                    </label>
-                    <div class="button-tele">
-                        <button type="submit"><i class="fas fa-share telegram"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
+        <ul class="tp-show-wrapper">
+            <li><a href="/html/add_report.html">
+                    <h1>Đây là Tên Topic</h1>
+                </a>
+                <ul class="submit-tp-show-wrapper">
+                    <li>
+                        <a href=""><h3>Đây là tên File đã Submit</h3></a>
+                    </li>
+                    <li>
+                        <a href=""><h3>Đây là tên File đã Submit</h3></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">
+                    <h1>Đây là Tên Topic</h1>
+                </a>
+                <ul class="submit-tp-show-wrapper">
+                    <h3>Bạn chưa nộp File nào.</h3>
+                </ul>
+            </li>
+            <li><a href="">
+                    <h1>Đây là Tên Topic</h1>
+                </a>
+                <ul class="submit-tp-show-wrapper">
+                    <h3>Bạn chưa nộp File nào.</h3>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div class="footer" style="display: block;">
         <div class="half-triagle"></div>
@@ -166,15 +113,13 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="/js/detail-rp.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="/js/topic_article.js"></script>
 </body>
 
 </html>
