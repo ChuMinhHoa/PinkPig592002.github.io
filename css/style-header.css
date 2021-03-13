@@ -126,6 +126,11 @@ a:hover {
     animation: img 1s infinite;
 }
 
+.side-bar{
+    transition: display 0.5s;
+    display: block;
+}
+
 .side-bar a {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);
