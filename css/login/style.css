@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: bold;
 }
+
 h1{
     margin: 0px;
     text-align: center;
@@ -22,6 +23,7 @@ img {
 body{
     background-image: url(/Img/200629.jpg);
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .triagle-wrapper{
